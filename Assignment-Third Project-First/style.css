@@ -106,6 +106,7 @@ main .section-first {
     border-radius: 5px;
     border: none;
     margin-right: 10px;
+    color: white;
 }
 
 .section-first .left-content .btn-first{
