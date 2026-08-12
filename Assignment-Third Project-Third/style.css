@@ -1,0 +1,369 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #F8F3E8;
+}
+
+/* Header Start From Here  */
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
+}
+
+header nav img {
+    height: 90px;
+}
+
+header .navigation-links ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+.navigation-links ul li a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navigation-links ul li:nth-child(1) a {
+    padding-bottom: 10px;
+    border-bottom: 4px solid rgb(2, 90, 2);
+    color: rgb(2, 90, 2);
+}
+
+header nav .searchBar-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+header nav .searchBar-container i , header nav .searchBar-container hr{
+    position: absolute;
+    font-size: 20px;
+}
+
+header nav .searchBar-container hr {
+    left: 215px;
+    height: 23px;
+}
+
+header nav .searchBar-container .shopping-bag {
+    left: 225px;
+}
+
+
+header nav .searchBar-container .magnifying-glass {
+    color: rgb(255, 196, 0);
+    left: 15px;
+}
+
+header nav .searchBar-container input{
+    padding: 10px 50px;
+    width: 260px;
+    border-radius: 20px;
+    border: 2px solid rgba(128, 128, 128, 0.333);
+}
+
+/* Header Ends  Here  */
+
+/* main section start from here  */
+
+/* ------------------------------------ section - first start*/
+
+main .top-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+main .top-section img {
+    height: 600px;
+    position: relative;
+    top: 35px;
+    filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.608));
+}
+
+main .top-section .left-div {
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.top-section .left-div .star-icon {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 15px;
+    background-color: rgba(0, 128, 0, 0.244);
+    border: 1.5px solid green;
+    padding: 4px 0px 4px 15px;
+    width: 220px;
+    border-radius: 20px;
+    color: green;
+}
+
+.top-section .left-div h1 {
+    font-size: 50px;
+}
+
+.top-section .left-div .button-container {
+    display: flex;
+    gap: 40px;
+}
+
+.top-section .left-div .button-container div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.top-section .left-div .button-container .add-cart-btn {
+    background-color: black;
+    color: white;
+    padding: 15px 12px;
+    border-radius: 45px;
+    cursor: pointer;
+}
+
+.add-cart-btn .basket-icon {
+    background-color: rgba(255, 187, 0, 0.903);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.top-section .left-div .button-container .update-quantity {
+    background-color: rgba(255, 255, 255, 0.888);
+    border: 1px solid rgb(195, 193, 193);
+    border-radius: 45px;
+    display: flex;
+    padding: 15px;
+    font-size: 25px;
+    box-shadow: 0px 5px 10px rgb(206, 204, 204);
+}
+
+.update-quantity p:nth-child(1){
+    color: black;
+    cursor: pointer;
+}
+
+.update-quantity p:nth-child(3){
+    color: red;
+}
+
+.update-quantity p:last-child{
+    color: green;
+    cursor: pointer;
+}
+
+.button-container .update-quantity hr {
+    height: 20px;
+    border: 1px solid rgba(154, 150, 150, 0.473);
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+main .top-section .chips-feature {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+}
+
+.chips-feature  .feature{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.chips-feature .feature .left-icon-container {
+    background-color: rgba(246, 244, 244, 0.832);
+    border-radius: 50%;
+    font-size: 15px;
+}
+
+.feature .left-icon-first {
+    border: 1px solid rgb(2, 112, 2);
+    color: rgb(2, 112, 2);
+    padding: 9px 10px; 
+}
+
+.feature .left-icon-second {
+    border: 1px solid rgb(255, 129, 2);
+    color: rgb(255, 129, 2);
+    padding: 10px 12px; 
+}
+
+.feature .left-icon-third {
+    border: 1px solid rgb(255, 2, 2);
+    color: rgb(255, 2, 2);
+    padding: 10px 12px; 
+}
+
+.top-section .right-div {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.top-section .right-div .flavour-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 250px;
+}
+
+.right-div {
+    position: relative;
+}
+
+.right-div hr {
+    transform: rotate(180deg);
+    position: absolute;
+    left: 30px;
+    height: 300px;
+    z-index: -1;
+    border: 1px dashed brown;
+}
+
+.right-div .flavour-container p{
+    color: rgb(110, 110, 110);
+}
+
+.right-div .right-icon-container {
+    background-color: red;
+    padding: 20px;
+    border-radius: 50%;
+    font-size: 20px;
+    font-size: 25px;
+}
+
+.right-div .chilly-icon {
+    background-color: green;
+    color: rgb(0, 81, 0);
+}
+
+.right-div .drumstick-icon {
+    background-color: brown;
+    color: rgb(123, 18, 18);
+}
+
+.right-div .flame-icon {
+    background-color: orange;
+    color: rgb(211, 124, 3);
+}
+
+/* ------------------------------------ section - first end*/
+
+/* ------------------------------------ section - second start*/
+.bottom-section {
+    display: flex;
+    justify-content: center;
+    padding: 15px 30px 10px 30px;
+}
+
+
+.bottom-section .bottom-section-seprate{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 15px;
+    width: 1600px;
+    padding: 40px 20px 40px;
+    border-radius: 20px;
+    background-color: rgb(1, 113, 1);
+}
+
+.bottom-section-seprate .button-container h5 {
+    font-size: 20px;
+    width: 100px;
+    margin-bottom: 20px;
+    color: white;
+    word-spacing: 5px;
+}
+
+.bottom-section-seprate .button-container button{
+    padding: 20px;
+    border-radius: 50%;
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.button-container .left-btn {
+    color: grey;
+}
+
+.button-container .right-btn {
+    color: rgb(0, 101, 0);
+}
+
+.bottom-section .packet-container {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    display: flex;
+    gap: 20px;
+}
+
+.bottom-section .packet-container  {
+    border-radius: 20px;
+    padding: 0px 30px 0px 30px;
+}
+
+.bottom-section .packet-container img {
+    z-index: 2;
+    height: 167px;
+
+    position: relative;
+    top: -15px;
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.642));
+}
+
+.packet-container .chips-detail-container {
+    line-height: 25px;
+}
+
+.chips-detail-container .rating{
+    display: inline-block;
+    font-size: 10px;
+    color: rgb(255, 183, 0);
+}
+
+.chips-detail-container .star-contianer p {
+    display: inline;
+    font-size: 12px;
+    margin-left: 15px;
+}
+
+.chips-detail-container h5 {
+    font-size: 15px;
+}
+
+.chips-detail-container button {
+    background-color: rgb(236, 3, 3);
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+/* ------------------------------------ section - second end*/
+
+/* main section ends here  */
